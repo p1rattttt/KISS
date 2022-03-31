@@ -19,6 +19,6 @@ private:
         int64_t len = 0;
         int64_t first_entry = 0;
     };
-    std::vector<Node> nodes_ = std::vector<Node>(1);
+    std::vector<Node> nodes_{1};
     int64_t last_ = 0;
 };
