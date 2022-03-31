@@ -1,0 +1,9 @@
+Good afternoon
+
+Task No. 211
+
+It is necessary to implement an effective search algorithm for a string in a very large text file. The file is uploaded once, then a large number of search requests occur.
+
+The details of the implementation, architecture, optimization and the final type of solution depend entirely on you, we do not impose additional requirements.
+However, all the aspects described above will be evaluated, so we expect high-quality implementation.
+Please provide the solution with a clear description and documentation and (if necessary) a start-up/installation guide.
