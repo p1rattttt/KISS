@@ -1,6 +1,12 @@
 #include <iostream>
+#include "library/SufAutomat.h"
+
+#include <string>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    sufAuto automat;
+    std::string s;
+    std::cin >> s;
+
     return 0;
 }
