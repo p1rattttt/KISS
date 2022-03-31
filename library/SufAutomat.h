@@ -4,23 +4,21 @@
 #pragma once
 #include <vector>
 #include <unordered_map>
+#include <fstream>
 
 
-struct sufAuto {
+class sufAuto {
+public:
+    void AddText(std::ifstream& file);
+    int64_t FirstEntry(const std::string& query);
+private:
+    void addChar(char c);
     struct Node {
         std::unordered_map<char, int64_t> to{};
         int64_t link = -1;
         int64_t len = 0;
-        int64_t amount = 0;
-        bool term = false;
+        int64_t first_entry = 0;
     };
-
-    std::vector<Node> cont = std::vector<Node>(1);
-    int64_t last = 0;
-
-    void addChar(char c);
-
-    void finishBuild();
-
-    void dfs(int64_t v);
+    std::vector<Node> nodes_ = std::vector<Node>(1);
+    int64_t last_ = 0;
 };

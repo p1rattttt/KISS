@@ -1,12 +1,11 @@
 #include <iostream>
-#include "library/SufAutomat.h"
+#include "library/Solver.h"
 
-#include <string>
-
-int main() {
-    sufAuto automat;
-    std::string s;
-    std::cin >> s;
-
+int main(int argc, char** argv) {
+    Solver solver(argv[1]);
+    std::string query;
+    while (std::cin >> query) {
+        std::cout << solver.FirstEntry(query) << std::endl;
+    }
     return 0;
 }
